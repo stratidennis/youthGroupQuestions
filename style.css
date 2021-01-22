@@ -1,0 +1,342 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #f5f3f3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nerko One', cursive;
+    font-weight: lighter;
+}
+
+.wrapper {
+    background-image: url("images/leaves-blur-blue.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 3% 0 18% 0;
+}
+
+.logoImage {
+    width: 13%;
+    margin: auto;
+}
+
+.logo {
+    width: 100%;
+}
+
+.info {
+    font-size: 80px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    margin: auto;
+    margin-top: -33px;
+    width: 45%;
+}
+
+.addQ {
+    margin: auto;
+    width: 95%;
+}
+
+.addQ textarea::placeholder {
+    color: #ffffff9c;
+}
+
+.addQ textarea {
+    background-color: #001531;
+    border: solid 1.5px #b19e6c;
+    font-weight: lighter;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    width: 100%;
+    padding: 25px 0;
+    resize: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.selectors {
+    margin: auto;
+    width: 49%;
+}
+
+.selectors button {
+    color: white;
+    font-size: 37px;
+    font-family: 'Nerko One', cursive;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+    background-color: #001531;
+}
+
+.gold {
+    background-color: #b19e6c;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.visuallyHidden {
+    position: absolute;
+    left: -999999px;
+}
+
+.options+label {
+    color: #ffffff6b;
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: #b19d6c79;
+    margin: 0;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.options:checked+label {
+    color: white;
+    background-color: #b19d6c;
+}
+
+.questionsSection {
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+}
+
+.intrebari {
+    background-color: #f3f3f3;
+    width: 70%;
+    margin: 30px auto 0 auto;
+    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.329);
+    padding: 3px 7px;
+    text-align: center;
+    position: relative;
+}
+
+.category {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: HelveticaNeue;
+    font-weight: 900;
+    margin-bottom: 5px;
+    padding-top: 8px;
+}
+
+.textIntrebare {
+    margin-bottom: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: HelveticaNeue;
+}
+
+.dataUpload {
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+    color: #0000008c;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: HelveticaNeue;
+}
+
+.content {
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+
+.push {
+    height: 120px;
+}
+
+footer {
+    background-color: #001531;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+}
+
+.externalLinks {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.link1 {
+    margin-right: 40px;
+}
+
+.link2 {
+    margin-left: 40px;
+}
+
+footer img {
+    width: 40px;
+}
+
+@media screen and (max-width:1500px) {
+    .selectors button {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .selectors button {
+        font-size: 25px;
+    }
+
+    .dropdown-content {
+        min-width: 170px;
+    }
+
+    .options+label {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .selectors button {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .logoImage {
+        width: 20%;
+    }
+
+    .info {
+        font-size: 40px;
+    }
+
+    form {
+        margin-top: -10px;
+        width: 65%;
+    }
+
+    .addQ textarea {
+        padding: 12px 0;
+    }
+
+    .dropdown-content {
+        min-width: 100px;
+    }
+
+    .options+label {
+        font-size: 17px;
+    }
+
+    .selectors button {
+        padding: 7px 0;
+    }
+
+    .questionsSection {
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .logoImage {
+        width: 23%;
+    }
+
+    .info {
+        font-size: 35px;
+    }
+
+    form {
+        width: 75%;
+    }
+
+    .addQ textarea {
+        font-size: 27px;
+        padding: 9px 0;
+    }
+
+    .selectors button {
+        padding: 5px 0;
+    }
+
+    .dropdown-content {
+        min-width: 90px;
+    }
+
+    .questionsSection {
+        grid-template-columns: 50% 50%;
+    }
+
+    .intrebari {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .logoImage {
+        width: 27%;
+    }
+
+    .info {
+        font-size: 27px;
+    }
+
+    .addQ textarea {
+        font-size: 24px;
+        padding: 7px 0;
+    }
+
+    .selectors button {
+        padding: 3px 0;
+    }
+
+    .dropdown-content {
+        min-width: 85px;
+    }
+}
